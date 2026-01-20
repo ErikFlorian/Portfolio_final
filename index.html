@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Portfolio – Erik Florian</title>
+<!---------------------------------------------------------->
+<style>
+:root {
+    --bg: #1a1d21;
+    --text: #e8e8e8;
+    --card: #2a2d31;
+    --card2: #3a3d42;
+    --accent: #6bb2ff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+}
+
+header {
+    background: var(--accent);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4em;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    animation: fadeIn 1s ease-out;
+}
+
+section {
+    background: var(--card);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+ul { line-height: 1.7; }
+
+.project-card {
+    background: var(--card2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--accent);
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.tryhackme {
+    background: var(--card2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--accent);
+    transition: transform 0.2s;
+    
+}
+
+.tryhackme p {
+    font-size: 1.1em;
+}
+
+.tryhackme:hover {
+    transform: scale(1.03);
+}
+
+.project-img-real {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+.project-img-real:hover {
+    transform: scale(2);
+}
+
+.project-img-logger {
+    width: 50%;
+    height: 110px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+.project-img-logger:hover {
+    transform: scale(1.5);
+}
+
+
+.iplogger-discord {
+    width: 25%;
+    height: 75px;
+    object-fit: contain;
+    border: 8px;
+    transition: transform 0.3s ease; 
+}
+
+.iplogger-discord:hover {
+    transform: scale(2);
+}
+
+.project-img-iplogger {
+    width: 25%;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+    padding-left: 370px;
+}
+
+.project-img-iplogger:hover {
+    transform: scale(2);
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.tool {
+    background: var(--card2);
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    border-left: 4px solid #27ae60;
+    transition: transform 0.2s;
+}
+
+.tool:hover {
+    transform: scale(1.06);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--accent);
+    color: white;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Portfolio – Erik Florian</h1>
+    <p>Kybernetická bezpečnost • Linux • Programování</p>
+</header>
+<!---------------------------------------------------------->
+<div class="container">
+<section>
+<h2>O mně</h2>
+<ul>
+<li>Jmenuji se <strong>Erik Florian</strong> a je mi 15 let.</li>
+<li>Mezi mé zájmy patří: IT, divadlo a moderování, koloběžka, Rubikova kostka, letní sporty (cyklistika, hiking, plavání), 3D tiskárny</li>
+<li>Jsem komunikativní, energický a rád pracuji v kolektivu</li>
+</ul>
+</section>
+<!---------------------------------------------------------->
+<section>
+<h2>IT</h2>
+<div class="project-card">   
+<p>Python - online kurzy na Python</p>
+<p>Práce v terminálu, Linux a programování - hackdays, techdays</p>
+<p>Kybernetika - letní kemp SSPŠ</p>
+<h4>1. místo – CTF soutěž</h4>
+<p>Naše skupina vyhrála CTF soutěž pořádanou na vaší škole.</p>
+<p>Tato zkušenost mě motivovala dále se věnovat kybernetické bezpečnosti.</p>
+<p>Používání toolek a zkoumání technologií - níže</p>
+</div>
+</section>
+<!---------------------------------------------------------->
+<section>
+<h2>TryHackMe</h2>
+<div class="tryhackme">
+<p>Na stránce tryhackme.com jsem dokončil několik úloh zaměřených na kybernetickou bezpečnost a linuxové prostředí</p>
+</div>
+</section>
+<!---------------------------------------------------------->
+<section>
+<h2>Moje projekty</h2>
+<!---------------------------------------------------------->
+<div class="project-card">
+<h3>Pwnagotchi – Raspberry Pi Zero WH</h3>
+<img src="IMG_1699.jpg.jpg.png" class="project-img-real" alt="Pwnagotchi">
+<ul>
+<li>Raspberry Pi Zero WH + Waveshare displej</li>
+<li>Systém založený na Ubuntu</li>
+<li>Správa přes SSH + webové rozhraní</li>
+<li>Vlastní konfigurace, Linux troubleshooting</li>
+</ul>
+</div>
+<!---------------------------------------------------------->
+<div class="project-card">
+<h3>Kalkulačka v Pythonu (Tkinter)</h3>
+<img src="Snímek obrazovky 2026-01-09 200653.png" class="project-img-real" alt="Kalkulačka">
+<ul>
+<li>Základní operace (+, -, ×, /)</li>
+<li>Oprava numerických chyb (ZeroDivisionError)</li>
+<li>GUI pomocí Tkinteru</li>
+<li>Tlačítka pomocí lambda</li>
+<li>Podpora numerické klávesnice a početních operací</li>
+</ul>
+</div>
+<!---------------------------------------------------------->
+<div class="project-card">
+<h3>IP Webhook</h3>
+<img src="Snímek obrazovky 2026-01-09 164015.png" class="project-img-real" alt="iplogger1">
+<div class="webhookss">
+    <img src="Snímek obrazovky 2026-01-09 164222.png" class="project-img-logger" alt="iplogger2">
+    <img src="Snímek obrazovky 2026-01-09 165329.png" class="project-img-logger" alt="iplogger3">
+</div>
+ <ul>
+   <li>Používá modul "socket" a "discord webhook"</li>
+   <li>Je určen pouze pro interní síť</li>
+   <li>Získavá pouze hostname a adresu na síťi</li>
+   <li>Data posílá na discord server</li>
+ </ul>
+</div>
+<!---------------------------------------------------------->
+<div class="project-card">
+<h3>IP Pinger</h3>
+<div class="diplomas">
+    <img src="ippinger3.png" class="project-img-real" alt="ip_pinger3">
+</div>
+<div class="diplomas">
+    <img src="ippinger1 (2).png" class="project-img-real" alt="ip_pinger2">
+    <img src="ippinger1 (1).png" class="project-img-real" alt="ip_pinger1">
+</div>
+<ul>
+    <li>Používá moduly socket, os a ipadrress</li>
+    <li>Pro ping používá for loop</li>
+    <li>Zabarvený text díky ANSI kódování</li>
+    <li>Umí výpis veškerých, nebo jen online ip adres</li>
+    <li>Rozpozná lokální ip adresu a subnet masku</li>
+</ul>
+</div>
+<!---------------------------------------------------------->
+<div class="project-card">
+<h3>Ad BLocker - Pihole</h3>
+<div class="project-img-real">
+    <img src="piholedashboard.png" class="project-img-real" alt="pihole_dashboard">
+</div>
+<ul>
+    <li>Ad Blocker pomocí pihole dns serveru</li>
+    <li>Používá blocklist, podle kterého filtruje dns provoz</li>
+    <li>Vlastní webové rozhraní, dashboard</li>
+    <li>I na starších modelej raspberry funguje bezproblémově</li>
+    <li>Dokáže blokovat veškeré typy reklam</li>
+    <li>Zabudovaný antivirus, ropozná phishing, malware a další</li>
+</ul>
+
+
+
+</div>
+<!---------------------------------------------------------->
+<div class="project-card">
+<h3>Bjorn - Raspberry Pi Zero WH</h3>
+<img src="IMG_2340.png" class="project-img-real" alt="Bjornik">
+<ul>
+<li>Raspberry Pi Zero WH + Waveshare displej</li>
+<li>Systém založený na Debian Bookworm</li>
+<li>Projekt inspirovaný Pwnagotchim (skeleton)</li>
+<li>Práce a experimentace s Wi-Fi testováním</li>
+</ul>
+</section>
+<!---------------------------------------------------------->
+<section>
+<h2>Kurzy a certifikace</h2>
+<ul>
+<h3>Certifikace - python</h3>
+<div class="diplomas">
+    <img src="1-Diplom-Erik Florian-1.png" class="project-img-real" alt="diplom">
+    <img src="1-Diplom-Erik Florian2-1.png" class="project-img-real" alt="diplom2">
+</div>
+<h3>Certifikace SSPŠ</h3>
+<div class="diplomas">
+    <img src="WhatsApp Image 2026-01-04 at 16.14.44.jpeg" class="project-img-real" alt="diplom3">
+</div>
+</ul>
+</section>
+<!---------------------------------------------------------->
+<section>
+<h2>Moje oblíbené nástroje</h2>
+<div class="tools-grid">
+<div class="tool">Metasploit</div>
+<div class="tool">Hashcat</div>
+<div class="tool">Nmap</div>
+<div class="tool">Zenmap</div>
+<div class="tool">Bettercap</div>
+<div class="tool">Sparrow-WiFi</div>
+<div class="tool">Git</div>
+<div class="tool">Wireshark</div>
+<div class="tool">SEToolkit</div>
+</div>
+</section>
+<!---------------------------------------------------------->
+<section>     
+<h2>Operační systémy</h2>
+<h3>Arch Linux (Hyprland)</h3>
+<ul>
+<li>Balíčky, konfigurace, terminál</li>
+</ul>
+
+<h3>Kali Linux Live</h3>
+<ul>
+<li>Pentesting nástroje</li>
+</ul>
+
+<h3>Další OS</h3>
+<ul>
+<li>Linux Mint</li>
+<li>Zorin OS</li>
+<li>Fedora</li>
+<li>Ubuntu</li>
+<li>Omarchy</li>
+</ul>
+</section>
+<!---------------------------------------------------------->
+</div>
+<footer>
+© 2025 Erik Florian – Portfolio
+</footer>
+</body>
+</html>

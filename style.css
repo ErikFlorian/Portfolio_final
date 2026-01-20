@@ -1,0 +1,37 @@
+.diplomas {
+    display: flex;
+    gap: 20px;
+}
+
+.diplomas .project-img-real {
+    width: 100%;
+}
+
+.iplogger {
+    display: flex;
+    gap: 20px;
+}
+
+
+.webhookss {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+    overflow: hidden;   
+}
+
+.webhookss img {
+    width: 220px;
+    object-fit: contain;
+    flex-shrink: 0;    
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+
+.webhookss img:hover {
+    transform: scale(1.6);
+    z-index: 10;
+}
