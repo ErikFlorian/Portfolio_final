@@ -152,7 +152,7 @@ ul { line-height: 1.7; }
 }
 
 .project-img-real:hover {
-    transform: scale(2);
+    transform: scale(1.3);
 }
 
 .project-img-logger {
@@ -165,7 +165,7 @@ ul { line-height: 1.7; }
 }
 
 .project-img-logger:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 
@@ -178,7 +178,7 @@ ul { line-height: 1.7; }
 }
 
 .iplogger-discord:hover {
-    transform: scale(2);
+    transform: scale(1.3);
 }
 
 .project-img-iplogger {
@@ -192,7 +192,7 @@ ul { line-height: 1.7; }
 }
 
 .project-img-iplogger:hover {
-    transform: scale(2);
+    transform: scale(1.3);
 }
 
 .tools-grid {
